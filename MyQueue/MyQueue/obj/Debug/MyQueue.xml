@@ -1,0 +1,97 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MyQueue
+</name>
+</assembly>
+<members>
+<member name="T:MyQueue.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:MyQueue.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:MyQueue.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:MyQueue.MyQueue">
+ <summary>
+----------------------Interface Structure----------------------
+Type of Operation	    Throws exception    Returns special value
+Insert	                    add(val)	        offer(val)
+Remove	                    remove()	        poll()
+Examine	                    element()	        peek()
+----------------------------------------------------------------
+ </summary>
+ <author>Y12/Y13 Rathkeale College</author>
+ <date>March 2019</date>
+</member>
+<member name="M:MyQueue.MyQueue.Add(System.Char)">
+ <summary>
+     This method Is used To add elements at the tail Of queue (or according To the priority in the case of a priority queue implementation). Throws an exception
+     if an error occurs.
+ </summary>
+ <param name="val"> The Char to add to the Queue. </param>
+ <throws> MyQueueException </throws>
+</member>
+<member name="M:MyQueue.MyQueue.Offer(System.Char)">
+ <summary>
+     This method is used to add elements at the tail of queue. 
+ </summary>
+ <param name="val"> The Char to add to the Queue. </param>
+ <returns> True if successfull. False otherwise. </returns>
+</member>
+<member name="M:MyQueue.MyQueue.Peek">
+ <summary>
+     This method is used to view the head of queue without removing it. It returns Nothing if the queue is empty.
+ </summary>
+ <returns> A copy of the value at the head of the Queue. Or Nothing if Queue is empty. </returns>
+</member>
+<member name="M:MyQueue.MyQueue.Element">
+ <summary>
+     This method is similar to peek(). It throws MyQueueException when the queue is empty.
+ </summary>
+ <throws> MyQueueException </throws>
+ <returns> A copy of the value at the head of the Queue. </returns>
+</member>
+<member name="M:MyQueue.MyQueue.Remove">
+ <summary>
+     This method removes and returns the head of the queue. It throws MyQueueException when the Queue is impty.
+ </summary>
+ <throws> MyQueueException </throws>
+ <returns> The value at the head of the Queue. </returns>
+</member>
+<member name="M:MyQueue.MyQueue.Poll">
+ <summary>
+     This method removes and returns the head of the queue. It returns Nothing if the Queue is empty.
+ </summary>
+ <returns> The value at the head of the Queue. </returns>
+</member>
+<member name="M:MyQueue.MyQueue.Size">
+ <summary>
+     This method return the number of elements in the Queue.
+ </summary>
+ <returns> the number of elements in the Queue. </returns>
+</member>
+<member name="M:MyQueue.MyQueue.IsEmpty">
+ <summary>
+     Checks if the Queue is empty.
+ </summary>
+ <returns> True iff there are no elements in the Queue. Otherwise False. </returns>
+</member>
+<member name="M:MyQueue.MyQueue.ToString">
+ <summary>
+     Returns the Queue as a String object in order from right to left.
+ </summary>
+ <returns> The Queue as a String object. </returns>
+</member>
+</members>
+</doc>
