@@ -104,7 +104,12 @@ Public Class MyQueue
     ''' <returns> True iff there are no elements in the Queue. Otherwise False. </returns>
 
     Public Function IsEmpty() As Boolean
+        If Me.intCount = 0 Then
+            Return True
 
+        End If
+
+        Return False
     End Function
 
     ''' <summary>
